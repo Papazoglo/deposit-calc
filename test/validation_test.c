@@ -4,7 +4,7 @@
 CTEST(validation_money, all_cases)
 {
 	int res = money_check(9000);
-	int exp = 0;
+	int exp = 1;
 	ASSERT_EQUAL(exp, res);
 
 	res = money_check(23000);
