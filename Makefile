@@ -14,3 +14,4 @@ deposit.o: src/deposit.c
 clean:
 	rm -r bin
 	rm -r build
+
