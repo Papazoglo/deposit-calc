@@ -4,9 +4,9 @@
 int main()
 {
 
-	int money, term;
+	double money; int term;
 	printf("Введите сумму, которую хотите вложить ( >=10000 рублей ): ");
-	scanf("%d", &money);
+	scanf("%lf", &money);
 	printf("Введите срок вклада ( <=365 дней ): ");
 	scanf("%d", &term);
 	while(1)
@@ -14,7 +14,7 @@ int main()
 		if (money_check(money) == 1)
 		{
 			printf("Введите сумму, которую хотите вложить ( >=10000 рублей ): ");
-			scanf("%d", &money);
+			scanf("%lf", &money);
 		}
 		else
 			break;
@@ -29,6 +29,6 @@ int main()
 		else
 			break;
 	}
-	printf("Сумма вклада на момент окончания срока: %d рублей", value_count(money, term));
+	printf("Сумма вклада на момент окончания срока: %lf рублей", value_count(money, term));
 	return 0;
 }

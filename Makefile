@@ -26,6 +26,6 @@ validation_test.o: test/validation_test.c
 	gcc -Wall -Werror -I thirdparty -I src -c test/validation_test.c -o build/test/validation_test.o
 
 clean:
-	rm -r bin
 	rm -r build
+	rm -r bin
 

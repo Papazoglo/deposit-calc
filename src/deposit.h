@@ -1,8 +1,8 @@
 #ifndef DEPOSIT_H
 #define DEPOSIT_H
 
-int money_check(int);
+int money_check(double);
 int term_check(int);
-int value_count(int, int);
+double value_count(double, int);
 
 #endif

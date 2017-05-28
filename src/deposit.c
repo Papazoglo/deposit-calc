@@ -1,4 +1,4 @@
-int money_check(int money)
+int money_check(double money)
 {
 	if(money < 10000)
 		return 1;
@@ -14,7 +14,7 @@ int term_check(int term)
 		return 0;
 }
 
-int value_count(int money, int term)
+double value_count(double money, int term)
 {
 	float bPercent = 0;
 	if (money >= 100000)
@@ -24,7 +24,7 @@ int value_count(int money, int term)
 	else if (term <= 120)
 		money *= 1 + 0.02 + bPercent * 1;
 	else if (term <= 240)
-		money *= 1 + 0.6 + bPercent * 2;
+		money *= 1 + 0.06 + bPercent * 2;
 	else if (term <= 365)
 		money *= 1 + 0.12 + bPercent * 3;
 	return money;
