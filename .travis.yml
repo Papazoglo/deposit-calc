@@ -1,4 +1,6 @@
 language: c
 
-script: make
+script: 
+	-make
+	-bin/test
 
